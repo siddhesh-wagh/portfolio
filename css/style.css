@@ -71,7 +71,9 @@ a {
 body {
   background: var(--bg-primary);
   color: var(--text-color);
-  font-family: "Raleway", sans-serif;
+  font-family: 'Poppins', sans-serif;
+
+  /* font-family: "Raleway", sans-serif; */
   /* font-family: "Bradley Hand ITC", cursive; */
   line-height: 1.5;
 }
