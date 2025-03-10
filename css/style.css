@@ -5,6 +5,9 @@
 */
 
 @import url(https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;800&display=swap');
+
+
 
 /* variables */
 :root {
@@ -68,7 +71,9 @@ a {
 body {
   background: var(--bg-primary);
   color: var(--text-color);
-  font-family: "Raleway", sans-serif;
+  /* font-family: "Raleway", sans-serif; */
+  font-family: "Bradley Hand ITC", cursive;
+
   line-height: 1.5;
 }
 
@@ -206,7 +211,6 @@ body {
   left: 10px;
 }
 
-/* About */
 /* About Section Styling */
 #about-section {
   display: flex;
@@ -303,6 +307,93 @@ body {
 }
 
 /* Ends */
+
+/* Contact Section */
+#contact {
+  background: var(--bg-primary);
+  color: var(--text-color);
+  padding: 60px 20px;
+  text-align: center;
+  font-family: "Bradley Hand ITC", cursive;
+
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+#contact .content-text h2 {
+  font-size: 28px;
+  font-weight: var(--weight-bold);
+  margin-bottom: 10px;
+}
+
+#contact .content-text p {
+  font-size: 16px;
+  font-weight: var(--weight-small);
+  margin-bottom: 20px;
+}
+
+#contact form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#contact label {
+  font-size: 14px;
+  font-weight: var(--weight-semibold);
+  text-align: left;
+}
+
+#contact input,
+#contact textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--text-color);
+  border-radius: 5px;
+  font-family: "Bradley Hand ITC", cursive;
+  font-size: 16px;
+  background: var(--bg-primary);
+  color: var(--text-color);
+  transition: all 0.3s ease-in-out;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+  border-color: var(--primary-color);
+  outline: none;
+}
+
+#contact textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+#contact button {
+  background: var(--primary-color);
+  color: var(--text-color-two);
+  padding: 12px 20px;
+  font-family: "Bradley Hand ITC", cursive;
+  font-size: 16px;
+  font-weight: var(--weight-semibold);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+#contact button:hover {
+  background: var(--secondary-color);
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  #contact form {
+    width: 100%;
+  }
+}
+
 
 /* Footer */
 #footer {
